@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 class SingleChildLayouts extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.all(100),
-      child: Text("messenger1012"),
-    );
+    return SizedBox(
+        width: 200, height: 100, child: Center(child: Text("Muhammed yazeen")));
   }
 }
