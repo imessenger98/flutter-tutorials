@@ -5,10 +5,10 @@ class MultiChildLayouts extends StatelessWidget {
     return Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
-          textDirection: TextDirection.rtl, //can change direction of widget
+          verticalDirection: VerticalDirection.up,
           children: <Widget>[
             Container(
               width: 100,
