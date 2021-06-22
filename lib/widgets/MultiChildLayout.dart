@@ -7,40 +7,39 @@ class MultiChildLayouts extends StatelessWidget {
         height: MediaQuery.of(context).size.height,
         child: ListView(
           scrollDirection: Axis.horizontal, //change direction
+          reverse: false,
           children: <Widget>[
             Container(
               color: Colors.red,
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height,
-              child: Center(
-                child: Text("homepage"),
-              ),
+              child: Text("contact 1"),
             ),
             Container(
                 color: Colors.blue,
-                width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height,
+                width: 300,
+                height: 150,
                 child: Center(
-                  child: Text("sidebar"),
+                  child: Text("contact 1"),
                 )),
-            // Container(
-            //   color: Colors.green,
-            //   width: 300,
-            //   height: 150,
-            //   child: Text("contact 1"),
-            // ),
-            // Container(
-            //   color: Colors.yellow,
-            //   width: 300,
-            //   height: 150,
-            //   child: Text("contact 1"),
-            // ),
-            // Container(
-            //   color: Colors.orange,
-            //   width: 300,
-            //   height: 150,
-            //   child: Text("contact x"),
-            // ),
+            Container(
+              color: Colors.green,
+              width: 300,
+              height: 150,
+              child: Text("contact 1"),
+            ),
+            Container(
+              color: Colors.yellow,
+              width: 300,
+              height: 150,
+              child: Text("contact 1"),
+            ),
+            Container(
+              color: Colors.orange,
+              width: 300,
+              height: 150,
+              child: Text("contact x"),
+            ),
           ],
         ));
   }
