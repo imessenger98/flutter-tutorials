@@ -5,41 +5,35 @@ class MultiChildLayouts extends StatelessWidget {
     return Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
-        child: ListView(
-          scrollDirection: Axis.horizontal, //change direction
-          reverse: false,
+        child: GridView.count(
+          crossAxisCount: 2,
+          scrollDirection: Axis.horizontal,
           children: <Widget>[
             Container(
-              color: Colors.red,
-              width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height,
-              child: Text("contact 1"),
-            ),
-            Container(
-                color: Colors.blue,
-                width: 300,
-                height: 150,
+                color: Colors.amber,
                 child: Center(
-                  child: Text("contact 1"),
+                  child: Text("messenger1012@"),
                 )),
             Container(
-              color: Colors.green,
-              width: 300,
-              height: 150,
-              child: Text("contact 1"),
-            ),
+                color: Colors.red,
+                child: Center(
+                  child: Text("messenger1012@"),
+                )),
             Container(
-              color: Colors.yellow,
-              width: 300,
-              height: 150,
-              child: Text("contact 1"),
-            ),
+                color: Colors.green,
+                child: Center(
+                  child: Text("messenger1012@"),
+                )),
             Container(
-              color: Colors.orange,
-              width: 300,
-              height: 150,
-              child: Text("contact x"),
-            ),
+                color: Colors.blue,
+                child: Center(
+                  child: Text("messenger1012@"),
+                )),
+            Container(
+                color: Colors.orange,
+                child: Center(
+                  child: Text("messenger1012@"),
+                )),
           ],
         ));
   }
