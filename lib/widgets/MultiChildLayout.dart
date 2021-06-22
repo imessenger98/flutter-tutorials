@@ -5,35 +5,42 @@ class MultiChildLayouts extends StatelessWidget {
     return Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          verticalDirection: VerticalDirection.up,
+        child: ListView(
+          scrollDirection: Axis.horizontal, //change direction
           children: <Widget>[
             Container(
-              width: 100,
-              height: 100,
               color: Colors.red,
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height,
               child: Center(
-                child: Text("one"),
+                child: Text("homepage"),
               ),
             ),
             Container(
-              width: 100,
-              height: 100,
-              color: Colors.green,
-              child: Center(
-                child: Text("two"),
-              ),
-            ),
-            Container(
-              width: 100,
-              height: 100,
-              color: Colors.blue,
-              child: Center(
-                child: Text("three"),
-              ),
-            )
+                color: Colors.blue,
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height,
+                child: Center(
+                  child: Text("sidebar"),
+                )),
+            // Container(
+            //   color: Colors.green,
+            //   width: 300,
+            //   height: 150,
+            //   child: Text("contact 1"),
+            // ),
+            // Container(
+            //   color: Colors.yellow,
+            //   width: 300,
+            //   height: 150,
+            //   child: Text("contact 1"),
+            // ),
+            // Container(
+            //   color: Colors.orange,
+            //   width: 300,
+            //   height: 150,
+            //   child: Text("contact x"),
+            // ),
           ],
         ));
   }
