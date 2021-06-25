@@ -9,38 +9,13 @@ class StackWidgets extends StatelessWidget {
       color: Colors.grey,
       child: Stack(
         textDirection: TextDirection.rtl,
-        alignment: Alignment.bottomCenter,
+        alignment: Alignment.center,
         children: <Widget>[
-          Align(
-            alignment: Alignment.bottomCenter,
+          Positioned(
             child: Container(
               width: 100,
               height: 100,
-              color: Colors.redAccent,
-            ),
-          ),
-          Align(
-            alignment: Alignment.topCenter,
-            child: Container(
-              width: 100,
-              height: 100,
-              color: Colors.redAccent,
-            ),
-          ),
-          Align(
-            alignment: Alignment.centerLeft,
-            child: Container(
-              width: MediaQuery.of(context).size.width,
-              height: 100,
-              color: Colors.redAccent,
-            ),
-          ),
-          Align(
-            alignment: Alignment.centerLeft,
-            child: Container(
-              width: MediaQuery.of(context).size.width,
-              height: 50,
-              color: Colors.green,
+              color: Colors.black,
             ),
           ),
         ],
