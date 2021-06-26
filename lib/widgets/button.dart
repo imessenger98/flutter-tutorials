@@ -5,7 +5,7 @@ class ButtonCreate extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Center(
-        child: FlatButton(
+        child: OutlineButton(
           onPressed: () {
             print("button clicked");
           },
@@ -14,10 +14,9 @@ class ButtonCreate extends StatelessWidget {
           },
           child: Text("click me"),
           color: Colors.yellow,
-          textColor: Colors.white,
+          textColor: Colors.red,
           highlightColor: Colors.green,
           splashColor: Colors.black,
-          disabledColor: Colors.white,
           disabledTextColor: Colors.black87,
           // shape: CircleBorder(),
           shape: StadiumBorder(),
